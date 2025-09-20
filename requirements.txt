@@ -1,0 +1,5 @@
+Flask
+requests
+cachetools
+python-dotenv
+flask-cors
