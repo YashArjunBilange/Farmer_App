@@ -3,8 +3,16 @@ from cachetools import TTLCache, cached
 import requests
 from flask_cors import CORS
 import os
-from pyngrok import ngrok
+os.environ["DATA_GOV_API_KEY"] = "579b464db66ec23bdd000001332c36f024f34bb07cb98b5cc6e8fdd9"
 
+from pyngrok import ngrok, conf
+# paste your token inside quotes
+authtoken = "32H42LUvHyhfYeirIGh7yyMiGtg_6mtZ94AEzv7GiSHiGL5sf"
+
+# set auth token
+ngrok.set_auth_token(authtoken)
+
+print("✅ ngrok authtoken configured successfully")
 
 app = Flask(__name__)
 CORS(app)
