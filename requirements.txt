@@ -3,4 +3,4 @@ requests
 cachetools
 python-dotenv
 flask-cors
-pyngrok==6.2.1
+pyngrok==7.3.0
