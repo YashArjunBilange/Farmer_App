@@ -50,5 +50,7 @@ def prices():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 PORT = 8000  # change port
-public_url = ngrok.connect(PORT)
-print("Public URL:", public_url)
+if __name__ == "__main__":
+    public_url = ngrok.connect(PORT)
+    print("Public URL:", public_url)
+    app.run(port=PORT)
