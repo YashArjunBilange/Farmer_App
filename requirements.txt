@@ -1,6 +1,5 @@
 Flask==3.0.3
 requests
 cachetools
-python-dotenv
 flask-cors
 gunicorn==20.1.0
