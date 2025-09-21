@@ -49,6 +49,3 @@ def prices():
         return jsonify({"records": normalized})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-PORT = 8000  # change port
-if __name__ == "__main__":
-    app.run(port=PORT)
